@@ -61,11 +61,9 @@
 
 ### Установка OpenVPN server и/или FAS
 
-1. Скачиваем себе на ПК архив [almalinux10.tar.gz](https://cloud.mail.ru/public/BnyJ/Ldvx5A9SW) с пакетами для установки **OpenVPN server** и **FAS**.
-2. Переносим этот архив по [WinSCP](https://winscp.net/eng/download.php) на сервер в домашний каталог.
-3. Заходим в домашний каталог сервера, где лежит архив, и запускаем установку:
+1. Заходим на сервер и запускаем установoщик:
      ```powershell
-     yum -yq install tar && cd ~ && for f in almalinux10*.tar.gz; do tar xzf $f; done && cd almalinux10 && ./go
+     sudo yum -yq install tar && cd ~ && wget https://github.com/smkuzmin/almalinux-openvpn-fas/raw/refs/heads/main/almalinux10.tar.gz && for f in almalinux10*.tar.gz; do tar xzf $f; done && cd almalinux10 && ./go
      ```
     В меню выбираем нужные пакеты (рекомендуемые уже выбраны) и жмем **Install selected**.
 4. После установки пакетов требуется перезагрузка:
