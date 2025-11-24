@@ -61,7 +61,7 @@
 
 ### Установка OpenVPN server и/или FAS
 
-1. Заходим на сервер и запускаем установoщик:
+1. Заходим на сервер и запускаем установщик:
      ```powershell
      yum -yq install tar && cd ~ && wget https://github.com/smkuzmin/almalinux-openvpn-fas/raw/refs/heads/main/almalinux10.tar.gz && for f in almalinux10*.tar.gz; do tar xzf $f; done && cd almalinux10 && ./go
      ```
