@@ -63,7 +63,7 @@
 
 1. Заходим по SSH на сервер и запускаем установщик:
      ```powershell
-     yum -yq install tar && cd ~ && wget -O almalinux10.tar.gz https://github.com/smkuzmin/almalinux-openvpn-fas/raw/refs/heads/main/almalinux10.tar.gz && for f in almalinux10*.tar.gz; do tar xzf $f; done && cd almalinux10 && ./go
+     systemctl restart chronyd; yum -yq install tar wget && cd ~ && wget -O almalinux10.tar.gz https://github.com/smkuzmin/almalinux-openvpn-fas/raw/refs/heads/main/almalinux10.tar.gz && for f in almalinux10*.tar.gz; do tar xzf $f; done && cd almalinux10 && ./go
      ```
 2. В меню выбираем нужные пакеты (рекомендуемые уже выбраны) и жмем **Install selected**.
 3. После установки пакетов требуется перезагрузка:
