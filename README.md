@@ -17,7 +17,7 @@
 ### Установка AlmaLinux
 
 1. Скачиваем iso-образ [AlmaLinux 10 Minimal](https://repo.almalinux.org/almalinux/10/isos/x86_64/AlmaLinux-10-latest-x86_64-minimal.iso).
-2. Устанавливаем его на сервер (2 CPU cores / 2–4 GB RAM / 20 GB storage):
+2. Устанавливаем его на сервер (Hyper-V Gen 2 / 2 CPU cores / 2–4 GB RAM / 20 GB storage):
    - **Язык в процессе установки**: Русский / Русский (Россия)
    - **Место установки**: Автоматическое разбиение диска
    - **KDUMP**: \[ \] Включить kdump
