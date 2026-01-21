@@ -1,11 +1,3 @@
-
-- https://sites.google.com/site/smkuzmin/home/almalinux
-
-***
-[ks.cfg](ks.cfg)
-[AlmaLinux-10.0-x64-Minimal.iso.txt](AlmaLinux-10.0-x64-Minimal.iso.txt)
-***
-
 Предлагаю максимально автоматизированный способ установить **OpenVPN server** и/или [FAS](https://sites.google.com/site/smkuzmin/home/fas) на [AlmaLinux 10](https://go.lightnode.com/ru/tech/almalinux-vs-ubuntu).
 
 **FAS** (**F**ile **A**llocation **S**ystem) - это простой интерфейс к веб-серверу для размещения файлов в Интернет. Если **FAS** установлен, **OpenVPN server** использует его для раздачи своих конфиг-файлов и windows-клиентов.
