@@ -1,4 +1,10 @@
-## AlmaLinux: Установка сервера OpenVPN и/или FAS
+
+- https://sites.google.com/site/smkuzmin/home/almalinux
+
+***
+[ks.cfg](ks.cfg)
+[AlmaLinux-10.0-x64-Minimal.iso.txt](AlmaLinux-10.0-x64-Minimal.iso.txt)
+***
 
 Предлагаю максимально автоматизированный способ установить **OpenVPN server** и/или [FAS](https://sites.google.com/site/smkuzmin/home/fas) на [AlmaLinux 10](https://go.lightnode.com/ru/tech/almalinux-vs-ubuntu).
 
@@ -163,3 +169,18 @@
      ```powershell
      fasuser -h
      ```
+
+### Дополнительная настройка маршрутизации OpenVPN в локальной сети организации
+
+Добавляем статические маршруты к сети OpenVPN 10.118.0.0/16:
+```powershell
+ip route 10.118.0.0 255.255.0.0 10.125.33.37
+ping 10.118.0.1
+```
+на маршрутизаторах:
+```powershell
+3560-127-zu-1
+4948-125-ceh17-2
+6506-122-zu-1
+6506-123-ceh17-2
+```
