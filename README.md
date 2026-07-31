@@ -1,4 +1,4 @@
-[[logo.png]]
+![[logo.png]]
 
 ## AlmaLinux: Установка сервера OpenVPN или FAS
 
