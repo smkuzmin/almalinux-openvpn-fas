@@ -1,3 +1,5 @@
+[[logo.png]]
+
 ## AlmaLinux: Установка сервера OpenVPN или FAS
 
 Предлагаю максимально автоматизированный способ установить **OpenVPN server** и/или [FAS](https://sites.google.com/site/smkuzmin/home/fas) на [AlmaLinux 10](https://go.lightnode.com/ru/tech/almalinux-vs-ubuntu).
